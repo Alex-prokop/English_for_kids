@@ -1,4 +1,4 @@
-const cards = [
+export const cards = [
   [
     'Action (set A)',
     'Action (set B)',
@@ -310,5 +310,3 @@ const cards = [
     },
   ],
 ];
-
-export default cards;
