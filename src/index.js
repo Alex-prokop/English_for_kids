@@ -1,6 +1,4 @@
 import './index.html';
 import './index.scss';
-
-import './js/nav';
-
-import App from './js/App';
+import renderCards from './js/app';
+import { writeToLocalStorage, sortStat } from './js/Statistic';

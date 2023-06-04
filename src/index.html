@@ -3,41 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
     <title>English for Kids</title>
   </head>
   <body>
-    <header>
-      <div class="burger-menu">
-        <a href="#" class="burger-menu__button">
-          <span class="burger-menu__lines"></span>
-        </a>
-        <nav class="burger-menu__nav">
-          <a href="./index.html" class="burger-menu__link">Home</a>
-          <a href="#" class="burger-menu__link">Action (set A)</a>
-          <a href="#" class="burger-menu__link">Action (set B)</a>
-          <a href="#" class="burger-menu__link">Animal (set A)</a>
-          <a href="#" class="burger-menu__link">Animal (set B)</a>
-          <a href="#" class="burger-menu__link">Clothes</a>
-          <a href="#" class="burger-menu__link">Emotions</a>
-          <a href="#" class="burger-menu__link">7</a>
-          <a href="#" class="burger-menu__link">8</a>
-          <a href="#" class="burger-menu__link">Statistic</a>
-        </nav>
-        <div class="burger-menu__overlay"></div>
+    <header class="header">
+      <div class="modal-overlay modal_closed"></div>
+      <div class="modal modal_closed" id="modal">
+        <p></p>
+        <img />
       </div>
-
-      <label class="checkbox">
-        <input type="checkbox" class="checkbox__input" />
-        <div class="checkbox__div">
-          <span class="checkbox__text checkbox__text--first">Train</span>
-          <span class="checkbox__text checkbox__text--second"> Play</span>
+      <div class="header-wrapper">
+        <nav class="header-navigation" role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#" class="active"><li>Main page</li></a>
+              <a href="#"><li>Action (set A)</li></a>
+              <a href="#"><li>Action (set B)</li></a>
+              <a href="#"><li>Numbers</li></a>
+              <a href="#"><li>Colors</li></a>
+              <a href="#"><li>Animal (set A)</li></a>
+              <a href="#"><li>Animal (set B)</li></a>
+              <a href="#"><li>Clothes</li></a>
+              <a href="#"><li>Emotions</li></a>
+              <a href="#"><li>Statistic</li></a>
+            </ul>
+          </div>
+        </nav>
+        <div class="switch-wrapper">
+          <div class="onoffswitch">
+            <input
+              type="checkbox"
+              name="onoffswitch"
+              class="onoffswitch-checkbox"
+              id="myonoffswitch"
+              checked />
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            </label>
+          </div>
         </div>
-      </label>
+      </div>
     </header>
     <main>
-      <section>
-        <div id="cards-container"></div>
+      <section class="section">
+        <div class="container">
+          <div class="main-wrapper"></div>
+        </div>
       </section>
+      <footer class="foo ter">
+        <div class="footer-container">
+          <div class="github">
+            <a
+              href="https://github.com/Alex-prokop"
+              class="github"
+              target="_blank"
+              >Alex-prokop</a
+            >
+          </div>
+          <div class="rig">© 2023</div>
+          <a href="https://rs.school/js/" class="rss" target="_blank"></a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
